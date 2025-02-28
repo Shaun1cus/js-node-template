@@ -11,3 +11,9 @@ function calculateTotal(order) {
 }
 
 console.log(calculateTotal(order)); // Should print: 20
+
+// Test 2: Format a username
+function formatUsername(firstName, lastName) {
+	return `${lastName}, ${firstName}`;
+}
+console.log(formatUsername("John", "Doe")); // Should print: "Doe, John"
