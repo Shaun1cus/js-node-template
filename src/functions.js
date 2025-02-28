@@ -43,3 +43,14 @@ const nameInfo = {
 	lastName: "Doe",
 };
 console.log(buildFullName(nameInfo)); // Should print: "John Doe"
+
+// Test 6: Create a game character description
+function createCharacterDescription(character) {
+	return `Level ${character.level} ${character.name} wielding a ${character.weapon}`;
+}
+const character = {
+	name: "Hero",
+	weapon: "Sword",
+	level: 1,
+};
+console.log(createCharacterDescription(character)); // Should print: "Level 1 Hero wielding a Sword"
