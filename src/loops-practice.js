@@ -62,3 +62,21 @@ while (j <= 10) {
 /*
 	The for loop is typically used when the number of iterations is known in advance, as it allows for a more concise and readable syntax. The loop counter is initialized, the loop condition is checked, and the loop counter is incremented within the loop definition itself. In contrast, the while loop is more flexible and can be used when the number of iterations is not known in advance. The loop counter must be initialized before the loop, the loop condition is checked at the beginning of each iteration, and the loop counter must be manually incremented within the loop body. While loops are often used when the loop condition is more complex or when the loop may terminate based on external factors. Both loops can achieve the same result, but the choice between them depends on the specific requirements of the task at hand.
 */
+
+/*
+	Create an array of your favorite video games or movies (at least 5 items.) Use a for loop to iterate through the array and output each item to the console along with its position in the list (e.g., "Item 1: Doom").
+*/
+
+const favoriteGames = [
+	"Fallout: New Vegas",
+	"Elder Scrolls V: Skyrim",
+	"The Last of Us",
+	"Red Dead Redemption 2",
+	"Cyberpunk 2077",
+	"Mass Effect 2",
+	"Resogun",
+];
+
+for (let i = 0; i < favoriteGames.length; i++) {
+	console.log(`Item ${i + 1}: ${favoriteGames[i]}`);
+}
