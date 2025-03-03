@@ -104,3 +104,17 @@ for (let i = 0; i < players.length; i++) {
 		`${currentPlayer.name}: ${currentPlayer.kills} kills, ${currentPlayer.deaths} deaths, K/D ratio: ${kDRatio}`,
 	);
 }
+
+// Determine and display which player has the best K/D ratio
+let bestPlayer = null;
+let bestRatio = 0; // Initialize the best ratio to 0
+
+for (let i = 0; i < playersHalo.length; i++) {
+	const currentPlayer = playersHalo[i];
+	const kDRatio = currentPlayer.kills / Math.max(1, currentPlayer.deaths);
+
+	if (kDRatio > bestRatio) {
+		bestPlayer = currentPlayer.name;
+		bestRatio = kDRatio;
+	}
+}
