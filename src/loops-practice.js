@@ -80,3 +80,27 @@ const favoriteGames = [
 for (let i = 0; i < favoriteGames.length; i++) {
 	console.log(`Item ${i + 1}: ${favoriteGames[i]}`);
 }
+
+// Display an array of objects that represent players in a Halo Deathmatch game
+const playersHalo = [
+	{ name: "MasterChief", kills: 23, deaths: 2 },
+	{ name: "Arbiter", kills: 17, deaths: 12 },
+	{ name: "Buck", kills: 4, deaths: 30 },
+];
+
+// Calculate and display kill/death ratio for each player
+for (let i = 0; i < players.length; i++) {
+	const currentPlayer = playersHalo[i];
+	const kDRatio =
+		/* 
+			Variable to represent the kill/death ratio for each player.Calculated by dividing the number of kills by the number of deaths,with a minimum value of 1 to avoid division by zero.
+		*/
+		(currentPlayer.kills / Math.max(1, currentPlayer.deaths)).toFixed(2);
+
+	console.log(
+		/*
+			Output the scoreboard for each player, including their name, number of kills, number of deaths, and kill/death ratio.
+		*/
+		`${currentPlayer.name}: ${currentPlayer.kills} kills, ${currentPlayer.deaths} deaths, K/D ratio: ${kDRatio}`,
+	);
+}
