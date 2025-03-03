@@ -42,3 +42,23 @@ while (playerHealth > 0) {
 console.log(`Game over! Player survived ${roundCount} rounds.`);
 
 console.log(Math.floor(4.999));
+
+/*
+	Write a for loop that counts from 1 to 10 and outputs each number to the console. Then, write a while loop that does the same thing. Include comments explaining the differences between these two approaches.
+*/
+
+// For loop counting from 1 to 10
+for (let i = 1; i <= 10; i++) {
+	console.log(i);
+}
+
+// While loop counting from 1 to 10
+let j = 1; // Initialize the loop counter
+while (j <= 10) {
+	console.log(j);
+	j++; // Increment the loop counter
+}
+
+/*
+	The for loop is typically used when the number of iterations is known in advance, as it allows for a more concise and readable syntax. The loop counter is initialized, the loop condition is checked, and the loop counter is incremented within the loop definition itself. In contrast, the while loop is more flexible and can be used when the number of iterations is not known in advance. The loop counter must be initialized before the loop, the loop condition is checked at the beginning of each iteration, and the loop counter must be manually incremented within the loop body. While loops are often used when the loop condition is more complex or when the loop may terminate based on external factors. Both loops can achieve the same result, but the choice between them depends on the specific requirements of the task at hand.
+*/
